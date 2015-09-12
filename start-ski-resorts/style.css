@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    font-size: 100%;
+}
+
+body, h1, h2, h3, p, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: monospace, sans-serif;
+}
+
+section>h1,
+article>h1 {
+    display: none;
+}
+
+ul:empty:after {
+    content: 'No resorts found'
+}
+
+li {
+    font-size: 2em;
+}
+
+header {
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: .2em;
+}
+
+form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: .2em 0;
+    border-bottom: 2px solid navy;
+    background-color: #EEE;
+}
+
+form>label {
+    color: navy;
+    padding: .2em;
+    font-size: 1.2em;
+}
+
+form>input {
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    margin: 0;
+    padding: 0 1em;
+    font-size: 1em;
+}
+
+button {
+    background-color: orange;
+    color: navy;
+    font-size: 1.2em;
+}
+
+div.container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+div.container :first-child {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+
+div.container :last-child {
+    -webkit-box-flex: 10;
+    -webkit-flex-grow: 10;
+    -ms-flex-positive: 10;
+    flex-grow: 10;
+}
