@@ -1,0 +1,35 @@
+$(document).ready(function () {
+
+    $('article>img').hide();
+    $('nav>a').click(navigateToPage);
+
+    function isOpen() {
+        return $('main').height() !== 0;
+    }
+
+    function navigateToPage(e) {
+
+        e.preventDefault();
+
+        var link = $(this),
+            page = link.attr('href');
+
+        if (!isOpen()) {
+            $('main').animate({
+                height: '75%'
+            }, 500, function () {
+                changePage(link, page);
+            });
+        } else {
+            changePage(link, page);
+        }
+    }
+
+    function changePage(link, page) {
+        var img;
+
+        $('article').hide();
+        img = $(page).show().find('img').attr('src');
+
+    }
+});
