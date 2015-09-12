@@ -1,0 +1,54 @@
+body {
+    font-family: Myriad Pro;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    font-family: Myriad Pro;
+    border-collapse: collapse;
+    border: 1px black solid;
+    width: 100%;
+    max-width: 500px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    text-align: center;
+    width: 100%;
+}
+
+caption {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+thead {
+    background-color: #3600B6;
+    color: white;
+}
+
+thead tr {
+    border-bottom: 10px solid green;
+}
+
+tbody td {
+    padding: 0.5em;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: #eee;
+}
+
+table tfoot {
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+table tfoot tr:nth-last-of-type(1) td {
+    color: #3600B6;
+    font-size: 1.5em;
+}
